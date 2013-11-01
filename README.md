@@ -24,11 +24,11 @@ git add TripSort*.*
 //for tracking what we have changed
 git status
 
-//for storing our staged changes we run the commit command with a message
+//for storing the staged changes I run the commit command with a message
 git commit -m "modifying the BoardingCards classes"
 
 
-//for pushing and saving the changes that we stored in the previous step into the UI_development branch(remote repository)
+//for pushing and saving the changes that we stored in the previous step
 git push -u origin UI_development
 //after this command you have to type the user and password
 
@@ -48,10 +48,10 @@ git add TripSort*.*
 //for tracking what we have changed
 git status
 
-//for storing our staged changes we run the commit command with a message
+//for storing the staged changes I run the commit command with a message
 git commit -m "sorting algorithm upload"
 
-//for pushing and saving the changes that we stored in the previous step into the UI_development branch(remote repository)
+//for pushing and saving the changes that we stored in the previous step 
 git push -u origin UI_development
 //after this command you have to type the user and password
 
