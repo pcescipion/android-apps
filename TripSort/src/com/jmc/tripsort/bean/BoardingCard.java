@@ -1,7 +1,16 @@
 package com.jmc.tripsort.bean;
-public class BoardingCard {
+
+import java.io.Serializable;
+
+
+public class BoardingCard implements Serializable{
 	
-	public static String type;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	protected String type;
 	protected String from;
 	protected String to;
 	protected String remarks;
@@ -42,11 +51,11 @@ public class BoardingCard {
 		this.remarks = remarks;
 	}
 
-	public static String getType() {
+	public String getType() {
 		return type;
 	}
 
-	public static void setType(String type) {
-		BoardingCard.type = type;
+	public void setType(String type) {
+		this.type = type;
 	}
 }

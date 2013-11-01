@@ -5,27 +5,27 @@ package com.jmc.tripsort.bean;
 
 /**
  * @author JMC
- *
+ * 
  */
 public class AirBoardingCard extends BoardingCard {
-	
-	
+
 	private String Gate;
-	private String flyNumber;
+	private String number;
 	private String seat;
 
 	public AirBoardingCard(String from, String to) {
 		super(from, to);
 		super.setType("FLY");
-		
 	}
-	
-	public AirBoardingCard(String from, String to,String gate,String flyNumber,String seat) {
+
+	public AirBoardingCard(String from, String to, String gate,
+			String number, String seat) {
 		super(from, to);
 		super.setType("FLY");
 		this.setGate(gate);
 		this.setSeat(seat);
-		
+		this.setNumber(number);
+
 	}
 
 	public String getGate() {
@@ -36,12 +36,12 @@ public class AirBoardingCard extends BoardingCard {
 		Gate = gate;
 	}
 
-	public String getFlyNumber() {
-		return flyNumber;
+	public String getNumber() {
+		return number;
 	}
 
-	public void setFlyNumber(String flyNumber) {
-		this.flyNumber = flyNumber;
+	public void setNumber(String number) {
+		this.number = number;
 	}
 
 	public String getSeat() {
