@@ -74,10 +74,7 @@ public class TripAdapter extends ArrayAdapter <BoardingCard> {
     		 }else if(boardingcard.getType().equalsIgnoreCase("TRAIN")){
     			 holder.number.setText(((TrainBoardingCard)boardingcard).getNumber());
          		holder.seat.setText(((TrainBoardingCard)boardingcard).getSeat());         		
-    		 }else{
-    			 
-    		 }
-    		
+    		 } 		
     	}
  
         return(item);

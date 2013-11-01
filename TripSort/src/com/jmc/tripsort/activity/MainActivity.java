@@ -3,8 +3,12 @@ package com.jmc.tripsort.activity;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ListView;
 
 import com.jmc.tripsort.R;
@@ -13,11 +17,14 @@ import com.jmc.tripsort.bean.AirBoardingCard;
 import com.jmc.tripsort.bean.BoardingCard;
 import com.jmc.tripsort.bean.BusBoardingCard;
 import com.jmc.tripsort.bean.TrainBoardingCard;
+import com.jmc.tripsort.business.AbstractSort;
+import com.jmc.tripsort.business.SortTrip;
 
 public class MainActivity extends Activity {
 	
 	private ArrayList<BoardingCard> boardingCardList;	
 	private ListView listView;
+	private Button buttonSort;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +38,22 @@ public class MainActivity extends Activity {
 		initBoardingCardList(boardingCardList);
 		TripAdapter adapter = new TripAdapter(MainActivity.this, boardingCardList);
 		listView.setAdapter(adapter);
+		
+		buttonSort = (Button)findViewById(R.id.buttonSort);
+		buttonSort.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				
+				BoardingCard[] sortedList = boardingCardList.toArray(new BoardingCard[boardingCardList.size()]);
+				AbstractSort<BoardingCard> sortTrip = new SortTrip(sortedList);
+				sortTrip.Sort();	
+				
+				Intent intent = new Intent(MainActivity.this, ShowSortedListActivity.class);
+				intent.putExtra("sortedList", sortedList);
+				startActivity(intent);				
+			}
+		});
 	}
 	
 	
