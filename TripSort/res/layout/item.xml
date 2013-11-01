@@ -5,7 +5,7 @@
     android:orientation="vertical" >
 
     <TableRow
-        android:id="@+id/tableRow2"
+        android:id="@+id/tableRow1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
@@ -19,7 +19,7 @@
 
         <TextView
             android:id="@+id/from"
-           android:layout_width="0dp"
+            android:layout_width="0dp"
             android:layout_weight="0.80"
             android:layout_height="wrap_content"
             android:text=""
@@ -28,12 +28,12 @@
     </TableRow>
     
     <TableRow
-        android:id="@+id/tableRow3"
+        android:id="@+id/tableRow2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
         <TextView
-            android:id="@+id/txtDestination"
+            android:id="@+id/txtTo"
             android:layout_width="0dp"
             android:layout_weight="0.20"
             android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <TextView
-            android:id="@+id/destination"
+            android:id="@+id/to"
            android:layout_width="0dp"
             android:layout_weight="0.80"
             android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
     </TableRow>    
 
     <TableRow
-        android:id="@+id/tableRow1"
+        android:id="@+id/tableRow3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
@@ -80,7 +80,7 @@
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <TextView
-            android:id="@+id/outPutPrecio"
+            android:id="@+id/number"
             android:layout_width="0dp"
             android:layout_weight="0.29"
             android:layout_height="wrap_content"
@@ -91,7 +91,7 @@
     
     
        <TableRow
-        android:id="@+id/tableRow2"
+        android:id="@+id/tableRow4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
         
@@ -120,7 +120,7 @@
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <TextView
-            android:id="@+id/transport"
+            android:id="@+id/gate"
             android:layout_width="0dp"
             android:layout_weight="0.29"
             android:layout_height="wrap_content"
@@ -128,5 +128,28 @@
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
     </TableRow>
+    
+       <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <TextView
+            android:id="@+id/txtRemarks"
+            android:layout_width="0dp"
+            android:layout_weight="0.20"
+            android:layout_height="wrap_content"
+            android:text="Remarks :"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/remarks"
+            android:layout_width="0dp"
+            android:layout_weight="0.70"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall" />    
+            
+    </TableRow>       
 
 </LinearLayout>

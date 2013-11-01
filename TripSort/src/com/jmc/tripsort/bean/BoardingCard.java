@@ -1,7 +1,7 @@
 package com.jmc.tripsort.bean;
 public class BoardingCard {
 	
-	public static String type;
+	protected String type;
 	protected String from;
 	protected String to;
 	protected String remarks;
@@ -42,11 +42,11 @@ public class BoardingCard {
 		this.remarks = remarks;
 	}
 
-	public static String getType() {
+	public String getType() {
 		return type;
 	}
 
-	public static void setType(String type) {
-		BoardingCard.type = type;
+	public void setType(String type) {
+		this.type = type;
 	}
 }
