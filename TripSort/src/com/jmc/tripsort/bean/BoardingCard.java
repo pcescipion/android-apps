@@ -1,5 +1,14 @@
 package com.jmc.tripsort.bean;
-public class BoardingCard {
+
+import java.io.Serializable;
+
+
+public class BoardingCard implements Serializable{
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	
 	protected String type;
 	protected String from;
